@@ -1,0 +1,20 @@
+{
+	"name": "ddd-study",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsx watch src/index.ts",
+		"test": "vitest",
+		"coverage": "vitest run --coverage"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "^1.5.3",
+		"tsx": "^4.7.0",
+		"typescript": "^5.3.3",
+		"vitest": "^1.2.2"
+	}
+}
