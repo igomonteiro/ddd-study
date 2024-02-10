@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import OrderItem from "./OrderItem";
-import Order from "./Order";
-import Product from "./Product";
+import OrderItem from "./order-item";
+import Order from "./order";
+import Product from "./product";
 
 describe("Product unit tests", () => {
 	it("should throw error when error id is empty", () => {

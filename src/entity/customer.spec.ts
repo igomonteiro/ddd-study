@@ -1,5 +1,5 @@
-import Address from "./Address";
-import Customer from "./Customer";
+import Address from "./address";
+import Customer from "./customer";
 import { describe, expect, it } from "vitest";
 
 describe("Customer unit tests", () => {

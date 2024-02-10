@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import OrderItem from "./OrderItem";
-import Order from "./Order";
+import OrderItem from "./order-item";
+import Order from "./order";
 
 describe("Order unit tests", () => {
 	it("should set _total property to the sum of prices of all OrderItems", () => {
