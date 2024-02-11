@@ -1,7 +1,7 @@
 import Product from "../entity/product";
 
 export default class ProductService {
-	static increasePrice(products: Product[], percentage: number): void {
+	increasePrice(products: Product[], percentage: number): void {
 		for (const product of products) {
 			product.changePrice(product.price + (percentage / 100) * product.price);
 		}
