@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { Sequelize } from "sequelize-typescript";
-import ProductModel from "../db/model/product.model";
+import ProductModel from "../db/sequelize/model/product.model";
 import Product from "../../domain/entity/product";
 import { v4 as uuid } from "uuid";
 import ProductRepository from "./product.repository";

@@ -1,9 +1,9 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { Sequelize } from "sequelize-typescript";
-import CustomerModel from "../db/model/customer.model";
-import OrderModel from "../db/model/order.model";
-import OrderItemModel from "../db/model/order-item.model";
-import ProductModel from "../db/model/product.model";
+import CustomerModel from "../db/sequelize/model/customer.model";
+import OrderModel from "../db/sequelize/model/order.model";
+import OrderItemModel from "../db/sequelize/model/order-item.model";
+import ProductModel from "../db/sequelize/model/product.model";
 import CustomerRepository from "./customer.repository";
 import Customer from "../../domain/entity/customer";
 import { v4 as uuid } from "uuid";
