@@ -5,7 +5,7 @@ export default class Customer {
 	private _name: string;
 	private _address!: Address;
 	private _active = false;
-  private _rewardPoints = 0;
+	private _rewardPoints = 0;
 
 	constructor(id: string, name: string) {
 		this._id = id;
@@ -21,9 +21,17 @@ export default class Customer {
 		return this._name;
 	}
 
-  get rewardPoints(): number {
-    return this._rewardPoints;
-  }
+	get rewardPoints(): number {
+		return this._rewardPoints;
+	}
+
+	get address(): Address {
+		return this._address;
+	}
+
+	set address(address: Address) {
+		this._address = address;
+	}
 
 	isActive(): boolean {
 		return this._active;
@@ -54,11 +62,7 @@ export default class Customer {
 		this._active = false;
 	}
 
-  addRewardPoints(points: number) {
-    this._rewardPoints += points;
-  }
-
-	set address(address: Address) {
-		this._address = address;
+	addRewardPoints(points: number) {
+		this._rewardPoints += Math.round(points);
 	}
 }
